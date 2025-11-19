@@ -1,8 +1,4 @@
-@layer defaults.desctop         { 
-
-
-
-
+@layer defaults.desktop         { 
 
 
 
@@ -10,34 +6,12 @@ header {
     /*height: 50vh;*/
 } }
 
-@layer components.desctop       { 
-
-
-
-
-
- }
+@layer components.desktop       {  }
 /* components */
-@layer aheader.desctop          { 
-
-
-
- }
-@layer article.desctop          { 
-
-
-
-
-
- }
-@layer pagination.desctop       { 
-
-
-
-
-
- }
-@layer PAGE-ABOUT.desctop       { 
+@layer aheader.desktop          {  }
+@layer article.desktop          {  }
+@layer pagination.desktop       {  }
+@layer PAGE-ABOUT.desktop       { 
 
 
 

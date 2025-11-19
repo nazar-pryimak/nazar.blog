@@ -79,7 +79,7 @@
       console.log("desctop()");
       if (articlesPreviews) {
         if (articlesPreviews.children.length) {
-          previewSwitch = document.getElementById("preview-switch-desctop");
+          previewSwitch = document.getElementById("preview-switch-desktop");
           var previewModeSwitch = function() {
             console.log("change");
             viewUpdate(getFocusPREVIEW());

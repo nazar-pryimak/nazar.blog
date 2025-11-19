@@ -1,42 +1,11 @@
-@layer defaults.desctop           { 
+@layer defaults.desktop           {  }
 
-
-
- }
-
-@layer components.desctop         { 
-
-
-
-
-
- }
+@layer components.desktop         {  }
 /* components */
-@layer roll-paper.desctop         { 
-
-
-
-
-
- }
-@layer aheader.desctop            { 
-
-
-
-
-
- }
-@layer pagination.desctop         { 
-
-
-
-
-
- }
-@layer preview-switch.desctop     { 
-
-
-
+@layer layout.desktop         {  }
+@layer aheader.desktop            {  }
+@layer pagination.desktop         {  }
+@layer preview-switch.desktop     { 
 
 label:has(> input#preview-switch-mobile) {
     display: none;
@@ -46,7 +15,7 @@ label:has(> input#preview-switch-mobile) {
 
 
 
-label:has(> input#preview-switch-desctop) {
+label:has(> input#preview-switch-desktop) {
     position: fixed;
 
     left: calc((100vw - var(--container-width)) / 2 - 25px);
@@ -89,12 +58,12 @@ label > span:first-child {
 }
 
 
-label:has(> input#preview-switch-desctop):hover {
+label:has(> input#preview-switch-desktop):hover {
     color: hsl(0, 0%, 95%);
 }
 
 
-label:has(> input#preview-switch-desctop:checked) {
+label:has(> input#preview-switch-desktop:checked) {
 
     color: hsl(0, 0%, 95%);
 /*    color: hsl(0, 0%, 0%);*/
@@ -135,17 +104,8 @@ label:has(> input#preview-switch-desctop:checked) {
     /*left: 6px;*/
     /*top: -3.1px;*/
 } }
-@layer alist.desctop              { 
-
-
-
-
-
- }
-@layer primary-header.desctop     { 
-
-
-
+@layer alist.desktop              {  }
+@layer primary-header.desktop     { 
 
 
 
@@ -154,3 +114,4 @@ header.primary-header {
 }
 
  }
+@layer layout-decor.desktop {  }

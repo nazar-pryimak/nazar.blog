@@ -53,6 +53,18 @@
     <loc>/categories/physiology/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
+    <loc>/authors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/"
+                />
+  </url><url>
     <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"

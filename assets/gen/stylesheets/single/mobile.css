@@ -1,35 +1,10 @@
-@layer defaults.mobile         { 
+@layer defaults.mobile         {  }
 
- }
-
-@layer components.mobile       { 
-
-
-
-
- }
+@layer components.mobile       {  }
 /* components */
-@layer aheader.mobile          { 
-
-
-
-
-
- }
-@layer article.mobile          { 
-
-
-
-
-
- }
-@layer pagination.mobile       { 
-
-
-
-
-
- }
+@layer aheader.mobile          {  }
+@layer article.mobile          {  }
+@layer pagination.mobile       {  }
 @layer PAGE-ABOUT.mobile       { 
 
 /*

@@ -131,6 +131,14 @@ header.aheader {
 
     width:          0.1rem      !important;
     height:         100%        !important;
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .content
+        pre {
+            border-left-width: 2.8em !important;
+        }
 } }
 @layer pagination.common       { 
 

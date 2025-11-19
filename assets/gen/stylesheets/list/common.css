@@ -28,7 +28,7 @@ main {
 
 @layer components.common         {  }
 /* components */
-@layer roll-paper.common         {  }
+@layer layout.common         {  }
 @layer aheader.common            { 
 
 
@@ -151,7 +151,7 @@ main {
  }
 @layer preview-switch.common     { 
 
-label:has(> input#preview-switch-desctop,
+label:has(> input#preview-switch-desktop,
           > input#preview-switch-mobile) {
     /*position: fixed;*/
     /*z-index: 0;*/
@@ -170,7 +170,7 @@ label:has(> input#preview-switch-desctop,
 }
 
 
-label > :is(input#preview-switch-desctop,
+label > :is(input#preview-switch-desktop,
             input#preview-switch-mobile) {
     display:        none;
 }
@@ -372,3 +372,4 @@ header.primary-header > .bg-elem {
     display: none;
 }
  }
+@layer layout-decor.common {  }
