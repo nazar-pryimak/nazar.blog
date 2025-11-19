@@ -1569,8 +1569,10 @@ footer.primary-footer) {
 
 #in-dev-cover {
   display: grid;
-  display: none;
+  /*display: none;*/
   position: fixed;
+
+  z-index: 999;
 
   left: 0;
   right: 0;
@@ -1581,8 +1583,8 @@ footer.primary-footer) {
 
 -webkit-user-select:    none;  /* Chrome all / Safari all */
    -moz-user-select:    none;  /* Firefox all */
-  -ms-user-select:    none;  /* IE 10+ */
-    user-select:    none;  /* Likely future */
+    -ms-user-select:    none;  /* IE 10+ */
+        user-select:    none;  /* Likely future */
 }
   #in-dev-cover > div {
     text-align: center;
