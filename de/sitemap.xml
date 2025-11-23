@@ -41,18 +41,6 @@
                 href="/de/"
                 />
   </url><url>
-    <loc>/de/authors/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/authors/"
-                />
-  </url><url>
     <loc>/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
