@@ -14,19 +14,5 @@
       <guid>http://192.168.137.2:8080/entry1/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&#xA;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&#xA;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&#xA;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&#xA;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&#xA;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Post Name</title>
-      <link>http://192.168.137.2:8080/entry1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.137.2:8080/entry1/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&#xA;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&#xA;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&#xA;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&#xA;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&#xA;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Post Name</title>
-      <link>http://192.168.137.2:8080/entry1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.137.2:8080/entry1/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&#xA;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&#xA;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&#xA;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&#xA;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&#xA;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>
