@@ -2,8 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/articles/</loc>
+    <lastmod>2025-12-08T07:49:40+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/categories/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/articles/"
+                />
+  </url><url>
     <loc>/</loc>
-    <lastmod>2025-02-23T19:31:32+01:00</lastmod>
+    <lastmod>2025-12-08T07:49:40+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -15,18 +28,11 @@
                 href="/"
                 />
   </url><url>
-    <loc>/categories/articles/</loc>
-    <lastmod>2023-01-01T08:30:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/categories/articles/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/articles/"
-                />
+    <loc>/repo-in-repo/</loc>
+    <lastmod>2025-12-08T07:49:40+01:00</lastmod>
+  </url><url>
+    <loc>/categories/tech/</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/business/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
@@ -40,9 +46,6 @@
                 hreflang="en"
                 href="/categories/business/"
                 />
-  </url><url>
-    <loc>/categories/computer-sciece-ai/</loc>
-    <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
     <loc>/categories/economics-finance/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
