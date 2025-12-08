@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Nazar Pryimak</title>
+    <link>/tags/git/</link>
+    <description>Recent content in Git on Nazar Pryimak</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 08 Dec 2025 07:49:40 +0100</lastBuildDate>
+    <atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Repo in Repo? Your Options – Nazar Pryimak</title>
+      <link>/repo-in-repo/</link>
+      <pubDate>Mon, 08 Dec 2025 07:49:40 +0100</pubDate>
+      <guid>/repo-in-repo/</guid>
+      <description>&lt;p&gt;Besides obvious functionality (like adding a submodule, cloning a repo together with its submodules, etc.) and a few edge cases, &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Tools-Submodules&#34;&gt;Pro Git book&lt;/a&gt; explains how to &lt;a href=&#34;/repo-in-repo/#control-submodules&#34;&gt;control submodules&lt;/a&gt; while running commands from superproject directory.&lt;/p&gt;&#xA;&lt;div id=&#34;continuing&#34; &gt;&lt;/div&gt;&#xA;&lt;p&gt;The book does a good job covering &amp;ldquo;what&amp;rdquo; and &amp;ldquo;how&amp;rdquo;, but I feel like it doesn&amp;rsquo;t give enough attention to when, when not to and why. In this article I am trying to bridge that gap in regard to submodules.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
