@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+<title>Repo in Repo? Your Options | Nazar Pryimak</title>
+<meta name='description' content=''>
+
+<base href="/">
+
+<style>
+  .alist
+  .content {
+    content-visibility: hidden;
+  }
+  .alist.preview-mode
+  .content {
+    content-visibility: visible;
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Mono&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/common.min.5a8329a8a6b87fa77dc1552b2799e667b0ebe8734c938aaca46eb9231a3b201a.css"                                                   integrity="sha256-WoMpqKa4f6d9wVUrJ5nmZ7Dr6HNMk4qspG65Ixo7IBo=" crossorigin="anonymous">
+  
+  
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/mobile.min.035b0d71283ab29e1456b2faf00fba432ac6c5b90c6f9a29352f42f0347f59af.css" media="(max-width: 768px)"                        integrity="sha256-A1sNcSg6sp4UVrL68A&#43;6QyrGxbkMb5opNS9C8DR/Wa8=" crossorigin="anonymous">
+  
+  
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/desktop.min.254a2bfd2829110573d2e2f447feb55d574360efe0cf1ca0c63abebfccd33790.css" media="(min-width: 769px)"                        integrity="sha256-JUor/SgpEQVz0uL0R/61XVdDYO/gzxygxjq&#43;v8zTN5A=" crossorigin="anonymous">
+  
+
+  
+  
+    <link rel="stylesheet" href="/assets/stylesheets/single/common.min.d6c0ea673f3fb30cf8cc6d052e5d879972b079b29f7b730f5c9ae88d6e7fe225.css"                                                   integrity="sha256-1sDqZz8/swz4zG0FLl2HmXKwebKfe3MPXJrojW5/4iU=" crossorigin="anonymous">
+  
+  
+    <link rel="stylesheet" href="/assets/stylesheets/single/mobile.min.595b532e6cb60a45033cc365492e714a2a6d1d625eee85300e2638c1a60cd756.css" media="(max-width: 768px)"                        integrity="sha256-WVtTLmy2CkUDPMNlSS5xSiptHWJe7oUwDiY4waYM11Y=" crossorigin="anonymous">
+  
+  
+    <link rel="stylesheet" href="/assets/stylesheets/single/desktop.min.12ca9f618559be506fa8a543700e6232c5c4ed94c1ae6fd1c22833b89a178f87.css" media="(min-width: 769px)"                        integrity="sha256-EsqfYYVZvlBvqKVDcA5iMsXE7ZTBrm/RwigzuJoXj4c=" crossorigin="anonymous">
+  
+
+</head>
+<body id="top">
+  
+  <div class="container width-container article-font--for--width-calc"
+       style="z-index:  0;
+              position: relative;"
+  >
+    
+      
+  <header class="top-header">
+    <div class="burger" style="z-index: 10">
+  <button aria-label="Open main navigation menu" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true"></button>
+</div>
+
+  <nav role="navigation"
+    
+      class="navigation primary-nav" id="main-menu" aria-label="Primary Navigation"
+      style="z-index:    10;
+             position:   fixed"
+    
+  >
+    <ul
+      class="width-container article-font--for--width-calc"
+      style="position: relative;
+           --items: 2">
+  <li>
+    <div class="zippy" data-subnav='categories'>
+      <div
+        class="zippy-head">
+        <a  aria-current="true" class="ancestor" href="/" title="Articles and Tutorials | Home Page">
+          <span class="o1">Blog</span>
+        </a>
+      </div>
+      <div
+        class="zippy-overflow"
+        style="z-index: -1;
+               position: absolute !important;
+               left:     0        !important;
+               right:    0        !important;"
+      >
+        <div class="zippy-content" aria-hidden="true">
+          <ul class="end-options">
+  <li>
+    <a aria-current="true" class="ancestor" href="/categories/tech/" title="Technology"style="text-decoration: underline 0.15em hsl(270, 85%, 75%) !important"
+    >
+      <div class="width-content article-font--for--width-calc">
+        <div class="o2">Technology</div>
+      </div>
+    </a>
+  </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="zippy" data-subnav='categories'>
+      <div
+        class="zippy-head">
+        <a  href="/til/" title="Today I've Learned (TIL)">
+          <span class="o1">TIL</span>
+        </a>
+      </div>
+    </div>
+  </li>
+    </ul>
+  </nav>
+
+  </header>
+
+      
+  <main>
+    <article>
+
+      
+
+
+
+
+<header
+  class="aheader primary-header flex__column-center"
+  style="position: relative; z-index: 0; justify-content:center"
+>
+  <div style="position:relative">
+    <a href="/options-for-nested-repositories/" title="Reload this article">
+      <h1
+        onpointerover="this.style.color = 'hsl(270, 100%, 42%)'"
+        onpointerleave="this.style.color = 'hsl(0, 0%, 0%)'"
+      >Git Submodules. First alternatives and what to choose</h1>
+    </a>
+
+    
+      <div class="meta meta-terms pos__in-rel flex__column-center" style="gap:.5em">
+        
+
+  
+  
+  
+        
+
+  
+  
+  
+    <div class="terms">
+      <ul class="taxonomy-terms tags meta"
+        style="color: hsl(270, 85%, 75%) !important">
+          <li>
+            <a href="/tags/git/"
+              >#Git</a>
+          </li>
+          <li>
+            <a href="/tags/submodules/"
+              >#Submodules</a>
+          </li>
+          <li>
+            <a href="/tags/nested-repos/"
+              >#NestedRepos</a>
+          </li>
+        
+      </ul>
+    </div>
+      </div>
+    
+  </div>
+
+  
+    
+    
+    <time
+      class="meta meta-date pos__in-rel"
+      style="
+        align-self: flex-end;color: hsl(270, 85%, 75%) !important"
+      datetime="2025-12-08T07:49:40&#43;01:00"
+    >8 Dec 2025</time>
+  
+    
+
+<a
+  class='category-id grid__center'
+  href='/categories/tech/'
+  title='Main category: Technology'
+  style="
+          color:            hsl(270, 85%, 75%) !important;
+          background-color: hsl(270, 100%, 95%) !important;
+          border-color:     hsl(270, 100%, 88%) !important;"
+>
+  <span>T</span>
+</a>
+
+  <div
+    class="bg-elem hero"
+    style="background-color: hsl(270, 100%, 95%) !important;"
+  >
+</header>
+
+
+      <div class="content">
+        <p>Besides obvious functionality (like adding a submodule, cloning a repo together with its submodules, etc.) and a few edge cases, <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Pro Git book</a> explains how to <a href="/options-for-nested-repositories/#control-submodules">control submodules</a> while running commands from superproject directory.</p>
+<div id="continuing" ></div>
+<p>The book does a good job covering &ldquo;what&rdquo; and &ldquo;how&rdquo;, but I feel like it doesn&rsquo;t give enough attention to when, when not to and why. In this article I am trying to bridge that gap in regard to submodules.</p>
+<p>As the book author points out – if you&rsquo;re using submodules, you&rsquo;re probably doing so, because you&rsquo;re working on both superproject and submodule at the same time, otherwise you&rsquo;d probably use a simpler library management system.</p>
+<p>But actually, it is still not good enough reason to use submodules.</p>
+<p>For example, I am working on this Hugo site as well as its Hugo theme as a submodule. But while writing this article I realized that I don&rsquo;t need to use submodules, because the key feature and the actual reason why you would want to use submodules is to be able to track the exact version of submodules in your superproject. This is what submodules are actually for. If the state of superproject is effectively independent from submodule&rsquo;s state, using simple clone inside superproject and adding the repo to <code>.gitignore</code> is enough.</p>
+<p>On the other hand if it&rsquo;s not a single-dev project, submodules are the next thing to consider besides <strong>Git Subtree</strong>.</p>
+<p>If the amount of nested repos is large, there are other option as well, which have their own caveats, such as <strong>Monorepo</strong> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, <strong>Repo tool</strong> (form Google) and a few others. These methods are outside the scope of this article.</p>
+<h2 id="updating-submodules">Updating submodules</h2>
+<p><code>git submodule update</code> is the command that updates the submodule from superproject directory.</p>
+<p>It is very important to understand what we mean by updating a submodule; in other words, what <code>git submodule update</code> actually does – which is one or two things depending on if the first thing is already done (e.g., by <code>git fetch</code> or <code>git pull</code>):</p>
+<ol>
+<li>It fetches commits of the default (the one <code>HEAD</code> point to on remote or the one specified in submodule config file) remote branch, but only up to the commit registered in superproject; adding <code>--remote</code> flag fetches all new commits of that branch.</li>
+<li>It switches <code>HEAD</code> pointer to the last fetched commit no matter where it was before (even if it was detached – not safe for your detached-HEAD experiments – more on this below).</li>
+</ol>
+<p><code>git submodule update</code> command, as is, make sense only if your submodule is pull-only; meaning you never touch it and just want to <em>update</em> it to the latest version &ldquo;compatible&rdquo; with its superproject.</p>
+<h2 id='control-submodules'>Features you don't need</h2>
+<p>If you actually work on the submodule and someone pushes new changes to the submodule remote, you can merge the new commits to your local changes by <code>git submodule update --remote --merge</code> or use <code>git submodule update --remote --rebase</code> to rebase your local work on top of the fetched changes. For this to work you should be checked at a working branch in the submodule, so that <code>--merge</code> or <code>--rebase</code> have something to work with.</p>
+<p>I don&rsquo;t find it to be a good habit merging/rebasing submodule changes this way though. Unless you are super confident what <code>HEAD</code> in the submodule points to, it is much better to go there (or just switch the terminal instance, since you probably already have it opened) and actually look. And since you&rsquo;re already there, you might just as well perform the merge the way you always did.</p>
+<p>Let&rsquo;s say you&rsquo;re checked out at a feature branch in a submodule and run <code>git submodule update --remote --merge</code>, in which case you might end up merging remote&rsquo;s default (or configured) branch into that feature branch. Which is probably not what you want. You may also lose your local changes if you were detached at commit without a branch; sure, you can recover those &ldquo;lost&rdquo; commits, though you wont be notified that they are gone.</p>
+<h2 id="pulling-with-superproject">Pulling with superproject</h2>
+<p>If you&rsquo;re like me, who likes to experiment without a branch (or even if you don&rsquo;t), you&rsquo;d probably want to keep the default <code>pull</code> behavior, otherwise you might lose your work, just like you would moving <code>HEAD</code> away from commit without a branch; the problem is, again, that you don&rsquo;t exactly see that you&rsquo;re checked out at commit, not branch, when running <code>pull</code> from superproject directory.</p>
+<p>It makes sense to use <code>pull --recurse-submodules</code> if your submodules are pull-only; meaning you never touch them. In this case you could even set <code>submodule.recurse</code> option in your superproject config to <code>true</code>: <code>git config submodule.recurse true</code>; but don&rsquo;t set it to <code>true</code> in your global config.</p>
+<h2 id="switching-branches">Switching branches</h2>
+<p>It is important to remember that switching branches that point at different submodule states does not align the actual state with recorded state in the branch. That means that after switching branches the commit pointer (<code>160000</code> mode) in superproject will appear as modified, pointing at the commit, submodule&rsquo;s <code>HEAD</code> is pointing at.</p>
+<p>Unless state of the branch you&rsquo;re switching to is functionally dependent on submodule&rsquo;s state the branch (last commit at the branch that records submodule state) has a record of, that is probably what you want <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, otherwise you can force Git (&gt;= 2.13) to align submodules state to recorded version in the branch by running <code>git checkout</code> with <code>--recurse-submodules</code> flag. Since 2.14, Git allows you to set the config option <code>submodule.recurse</code> to <code>true</code>, which automates this.</p>
+<p>Turning <code>submodule.recurse</code> &ldquo;on&rdquo; makes submodule updates (<code>git submodule update</code>) automatic (since Git 2.15) for <code>git pull</code> as well, which as discussed above, might not be optimal if you actively work on submodules and don&rsquo;t want <code>pull</code> to auto-update them. In this case the solution would be an alias that only affects checkout: <code>git config --global alias.superswitch 'checkout --recurse-submodules'</code>.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><strong>Monorepo</strong> is just a concept of one repository containing multiple projects/packages that could otherwise be separate repos; <code>git subtree add</code> is one way to populate a monorepo; <code>subtree split</code> is used to publish parts of monorepo if you need to.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>If superproject state upon switching branches does not have a problem with unchanged state of its submodule, you get to keep the latest version of the submodule.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+      </div>
+      
+    </article>
+  </main>
+
+      <footer class="primary-footer">
+  <div class="side-nav" style="width: 0; height: 0; opacity: 0">
+    <a href="#top" aria-label="Top"></a>
+  </div>
+  <p class="copyright">&copy;&nbsp;2025.&nbsp;All rights reserved.</p>
+  
+</footer>
+      <div class="bg-elem"></div>
+    
+  </div>
+  
+
+      <script src="/assets/js/main.4fb6588afa1fd188cbc3970d5407f170e9f70811e1256ca40c22372818c714e9.js" integrity="sha256-T7ZYivof0YjLw5cNVAfxcOn3CBHhJWykDCI3KBjHFOk=" crossorigin="anonymous"></script>
+
+</body>
+</html>
