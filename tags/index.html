@@ -25,18 +25,18 @@
 
 
   
-    <link rel="stylesheet" href="/assets/stylesheets/baseof/common.min.5a8329a8a6b87fa77dc1552b2799e667b0ebe8734c938aaca46eb9231a3b201a.css"                                                   integrity="sha256-WoMpqKa4f6d9wVUrJ5nmZ7Dr6HNMk4qspG65Ixo7IBo=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/common.min.0042ff57b9cf3f086914f8501c349d74b87d563b7c2500357dde007d7bd4ac64.css"                                                   integrity="sha256-AEL/V7nPPwhpFPhQHDSddLh9Vjt8JQA1fd4AfXvUrGQ=" crossorigin="anonymous">
   
   
-    <link rel="stylesheet" href="/assets/stylesheets/baseof/mobile.min.035b0d71283ab29e1456b2faf00fba432ac6c5b90c6f9a29352f42f0347f59af.css" media="(max-width: 768px)"                        integrity="sha256-A1sNcSg6sp4UVrL68A&#43;6QyrGxbkMb5opNS9C8DR/Wa8=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/mobile.min.fdd5712d39d72ecb8990343bbf4499da55e2e64297a46ceab7877d8a294ceb04.css" media="(max-width: 768px)"                        integrity="sha256-/dVxLTnXLsuJkDQ7v0SZ2lXi5kKXpGzqt4d9iilM6wQ=" crossorigin="anonymous">
   
   
-    <link rel="stylesheet" href="/assets/stylesheets/baseof/desktop.min.254a2bfd2829110573d2e2f447feb55d574360efe0cf1ca0c63abebfccd33790.css" media="(min-width: 769px)"                        integrity="sha256-JUor/SgpEQVz0uL0R/61XVdDYO/gzxygxjq&#43;v8zTN5A=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/desktop.min.84ba47f777dbab7df941e71d727c75611316a57402de4455a62d5db346bb0241.css" media="(min-width: 769px)"                        integrity="sha256-hLpH93fbq335Qecdcnx1YRMWpXQC3kRVpi1ds0a7AkE=" crossorigin="anonymous">
   
 
   
   
-    <link rel="stylesheet" href="/assets/stylesheets/list/common.min.6843bd8b2f7ce1f7ece5c1a89d69bb9dc58bdb5fbcafe149f5eef3f5dd708efa.css"                                                   integrity="sha256-aEO9iy984ffs5cGonWm7ncWL21&#43;8r&#43;FJ9e7z9d1wjvo=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheets/list/common.min.00e40435ab58478b37b5f15e043454915a67324104663335ba8e5cff62ceb6ce.css"                                                   integrity="sha256-AOQENatYR4s3tfFeBDRUkVpnMkEEZjM1uo5c/2LOts4=" crossorigin="anonymous">
   
   
     <link rel="stylesheet" href="/assets/stylesheets/list/mobile.min.9b41a394e5fd2192c3fe9c0c5c7d120584f5ca150ad5dac24750550179c9735c.css" media="(max-width: 768px)"                        integrity="sha256-m0GjlOX9IZLD/pwMXH0SBYT1yhUK1drCR1BVAXnJc1w=" crossorigin="anonymous">
@@ -53,12 +53,19 @@
               position: relative;"
   >
     
-      
   
 
 <header class="top-header primary-header">
-  <div class="burger" style="z-index: 10">
-  <button aria-label="Open main navigation menu" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true"></button>
+  <div
+  class="burger
+         fix top-left"
+  style="z-index: 10;
+         padding: 10px;
+         padding-top: var(--menu-margin-top);">
+  <button
+    style="width: 48px;
+           height: 48px;"
+    aria-label="Open main navigation menu" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true"></button>
 </div>
 
   <nav role="navigation"
@@ -102,16 +109,6 @@
       </div>
     </div>
   </li>
-  <li>
-    <div class="zippy" data-subnav='categories'>
-      <div
-        class="zippy-head">
-        <a  href="/til/" title="Today I've Learned (TIL)">
-          <span class="o1">TIL</span>
-        </a>
-      </div>
-    </div>
-  </li>
     </ul>
   </nav>
 
@@ -126,7 +123,7 @@
   
 </header>
 
-      
+    
   <main>
     <section class="content description" style="color: inherit">
       
@@ -140,15 +137,14 @@
     </section>
   </main>
 
-      <footer class="primary-footer">
+    <footer class="primary-footer">
   <div class="side-nav" style="width: 0; height: 0; opacity: 0">
     <a href="#top" aria-label="Top"></a>
   </div>
   <p class="copyright">&copy;&nbsp;2025.&nbsp;All rights reserved.</p>
   
 </footer>
-      <div class="bg-elem"></div>
-    
+    <div class="bg-elem"></div>
   </div>
   
 

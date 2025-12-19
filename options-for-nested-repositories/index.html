@@ -4,7 +4,7 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
 <title>Repo in Repo? Your Options | Nazar Pryimak</title>
-<meta name='description' content=''>
+<meta name='description' content='A guide to managing nested Git repositories, exploring submodules, subtrees, and when to use them versus simpler alternatives.'>
 
 <base href="/">
 
@@ -25,24 +25,24 @@
 
 
   
-    <link rel="stylesheet" href="/assets/stylesheets/baseof/common.min.5a8329a8a6b87fa77dc1552b2799e667b0ebe8734c938aaca46eb9231a3b201a.css"                                                   integrity="sha256-WoMpqKa4f6d9wVUrJ5nmZ7Dr6HNMk4qspG65Ixo7IBo=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/common.min.0042ff57b9cf3f086914f8501c349d74b87d563b7c2500357dde007d7bd4ac64.css"                                                   integrity="sha256-AEL/V7nPPwhpFPhQHDSddLh9Vjt8JQA1fd4AfXvUrGQ=" crossorigin="anonymous">
   
   
-    <link rel="stylesheet" href="/assets/stylesheets/baseof/mobile.min.035b0d71283ab29e1456b2faf00fba432ac6c5b90c6f9a29352f42f0347f59af.css" media="(max-width: 768px)"                        integrity="sha256-A1sNcSg6sp4UVrL68A&#43;6QyrGxbkMb5opNS9C8DR/Wa8=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/mobile.min.fdd5712d39d72ecb8990343bbf4499da55e2e64297a46ceab7877d8a294ceb04.css" media="(max-width: 768px)"                        integrity="sha256-/dVxLTnXLsuJkDQ7v0SZ2lXi5kKXpGzqt4d9iilM6wQ=" crossorigin="anonymous">
   
   
-    <link rel="stylesheet" href="/assets/stylesheets/baseof/desktop.min.254a2bfd2829110573d2e2f447feb55d574360efe0cf1ca0c63abebfccd33790.css" media="(min-width: 769px)"                        integrity="sha256-JUor/SgpEQVz0uL0R/61XVdDYO/gzxygxjq&#43;v8zTN5A=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/desktop.min.84ba47f777dbab7df941e71d727c75611316a57402de4455a62d5db346bb0241.css" media="(min-width: 769px)"                        integrity="sha256-hLpH93fbq335Qecdcnx1YRMWpXQC3kRVpi1ds0a7AkE=" crossorigin="anonymous">
   
 
   
   
-    <link rel="stylesheet" href="/assets/stylesheets/single/common.min.d6c0ea673f3fb30cf8cc6d052e5d879972b079b29f7b730f5c9ae88d6e7fe225.css"                                                   integrity="sha256-1sDqZz8/swz4zG0FLl2HmXKwebKfe3MPXJrojW5/4iU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheets/single/common.min.c07e168d6e3d83703d3d9d89d619ca843abf01502263de67b9c41ac1faeaeafc.css"                                                   integrity="sha256-wH4WjW49g3A9PZ2J1hnKhDq/AVAiY95nucQawfrq6vw=" crossorigin="anonymous">
   
   
     <link rel="stylesheet" href="/assets/stylesheets/single/mobile.min.595b532e6cb60a45033cc365492e714a2a6d1d625eee85300e2638c1a60cd756.css" media="(max-width: 768px)"                        integrity="sha256-WVtTLmy2CkUDPMNlSS5xSiptHWJe7oUwDiY4waYM11Y=" crossorigin="anonymous">
   
   
-    <link rel="stylesheet" href="/assets/stylesheets/single/desktop.min.12ca9f618559be506fa8a543700e6232c5c4ed94c1ae6fd1c22833b89a178f87.css" media="(min-width: 769px)"                        integrity="sha256-EsqfYYVZvlBvqKVDcA5iMsXE7ZTBrm/RwigzuJoXj4c=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheets/single/desktop.min.01937d3861f963d2e7666759cada17670f20ce2417f6efc2e4da8cad66f45aa5.css" media="(min-width: 769px)"                        integrity="sha256-AZN9OGH5Y9LnZmdZytoXZw8gziQX9u/C5NqMrWb0WqU=" crossorigin="anonymous">
   
 
 </head>
@@ -53,10 +53,17 @@
               position: relative;"
   >
     
-      
   <header class="top-header">
-    <div class="burger" style="z-index: 10">
-  <button aria-label="Open main navigation menu" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true"></button>
+    <div
+  class="burger
+         fix top-left"
+  style="z-index: 10;
+         padding: 10px;
+         padding-top: var(--menu-margin-top);">
+  <button
+    style="width: 48px;
+           height: 48px;"
+    aria-label="Open main navigation menu" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true"></button>
 </div>
 
   <nav role="navigation"
@@ -100,22 +107,12 @@
       </div>
     </div>
   </li>
-  <li>
-    <div class="zippy" data-subnav='categories'>
-      <div
-        class="zippy-head">
-        <a  href="/til/" title="Today I've Learned (TIL)">
-          <span class="o1">TIL</span>
-        </a>
-      </div>
-    </div>
-  </li>
     </ul>
   </nav>
 
   </header>
 
-      
+    
   <main>
     <article>
 
@@ -124,20 +121,26 @@
 
 
 
-<header
-  class="aheader primary-header flex__column-center"
-  style="position: relative; z-index: 0; justify-content:center"
->
-  <div style="position:relative">
+<header class="aheader
+               rel z0  one center
+               bg-w"
+        style="height:          550px;
+               padding-top:     20px;
+               padding-bottom:  20px;">
+  <div class="rel center">
     <a href="/options-for-nested-repositories/" title="Reload this article">
       <h1
         onpointerover="this.style.color = 'hsl(270, 100%, 42%)'"
         onpointerleave="this.style.color = 'hsl(0, 0%, 0%)'"
+        class="txt-center b"
+
       >Git Submodules. First alternatives and what to choose</h1>
     </a>
 
     
-      <div class="meta meta-terms pos__in-rel flex__column-center" style="gap:.5em">
+      <div class="meta meta-terms
+                  rel-to  center gap03em"
+           style="top: calc(100% + 10px)">
         
 
   
@@ -174,28 +177,29 @@
     
     
     <time
-      class="meta meta-date pos__in-rel"
-      style="
-        align-self: flex-end;color: hsl(270, 85%, 75%) !important"
+      class="meta meta-date
+             rel -x-end -y-end"
+      style="bottom:-15px;color: hsl(270, 85%, 75%) !important"
       datetime="2025-12-08T07:49:40&#43;01:00"
     >8 Dec 2025</time>
   
-    
+    <div class="category-id
+                rel-to  center"
+    >
 
 <a
-  class='category-id grid__center'
   href='/categories/tech/'
   title='Main category: Technology'
   style="
           color:            hsl(270, 85%, 75%) !important;
           background-color: hsl(270, 100%, 95%) !important;
           border-color:     hsl(270, 100%, 88%) !important;"
->
-  <span>T</span>
-</a>
-
+ >T</a>
+</div>
   <div
-    class="bg-elem hero"
+    class="bg-elem hero
+           rel-to  z-1
+           top-left stretch"
     style="background-color: hsl(270, 100%, 95%) !important;"
   >
 </header>
@@ -245,15 +249,14 @@
     </article>
   </main>
 
-      <footer class="primary-footer">
+    <footer class="primary-footer">
   <div class="side-nav" style="width: 0; height: 0; opacity: 0">
     <a href="#top" aria-label="Top"></a>
   </div>
   <p class="copyright">&copy;&nbsp;2025.&nbsp;All rights reserved.</p>
   
 </footer>
-      <div class="bg-elem"></div>
-    
+    <div class="bg-elem"></div>
   </div>
   
 
