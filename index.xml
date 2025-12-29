@@ -6,8 +6,15 @@
     <description>Recent content on Nazar Pryimak</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 08 Dec 2025 07:49:40 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS @scope: Proximity and Boundaries</title>
+      <link>/css-scope/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>/css-scope/</guid>
+      <description>&lt;p&gt;When you first hear about css &lt;code&gt;@scope&lt;/code&gt;, you think: so what does it actually scope? And the answer is that it scopes where the css applies.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Repo in Repo? Your Options</title>
       <link>/options-for-nested-repositories/</link>

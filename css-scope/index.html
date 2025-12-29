@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+<title>CSS @scope: Proximity and Boundaries | Nazar Pryimak</title>
+<meta name='description' content='Explaining CSS @scope: how it defines style boundaries, introduces proximity-based cascade resolution, and differs from Shadow DOM.'>
+
+<base href="/">
+
+<style>
+  .alist
+  .content {
+    content-visibility: hidden;
+  }
+  .alist.preview-mode
+  .content {
+    content-visibility: visible;
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Mono&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/common.min.2f9f7d510bb1c30a4743b95bb0da069534c2435c1ee9034692b9de2250e01b32.css"                                                   integrity="sha256-L599UQuxwwpHQ7lbsNoGlTTCQ1we6QNGkrneIlDgGzI=" crossorigin="anonymous">
+  
+  
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/mobile.min.fdd5712d39d72ecb8990343bbf4499da55e2e64297a46ceab7877d8a294ceb04.css" media="(max-width: 768px)"                        integrity="sha256-/dVxLTnXLsuJkDQ7v0SZ2lXi5kKXpGzqt4d9iilM6wQ=" crossorigin="anonymous">
+  
+  
+    <link rel="stylesheet" href="/assets/stylesheets/baseof/desktop.min.84ba47f777dbab7df941e71d727c75611316a57402de4455a62d5db346bb0241.css" media="(min-width: 769px)"                        integrity="sha256-hLpH93fbq335Qecdcnx1YRMWpXQC3kRVpi1ds0a7AkE=" crossorigin="anonymous">
+  
+
+  
+  
+    <link rel="stylesheet" href="/assets/stylesheets/single/common.min.c07e168d6e3d83703d3d9d89d619ca843abf01502263de67b9c41ac1faeaeafc.css"                                                   integrity="sha256-wH4WjW49g3A9PZ2J1hnKhDq/AVAiY95nucQawfrq6vw=" crossorigin="anonymous">
+  
+  
+    <link rel="stylesheet" href="/assets/stylesheets/single/mobile.min.595b532e6cb60a45033cc365492e714a2a6d1d625eee85300e2638c1a60cd756.css" media="(max-width: 768px)"                        integrity="sha256-WVtTLmy2CkUDPMNlSS5xSiptHWJe7oUwDiY4waYM11Y=" crossorigin="anonymous">
+  
+  
+    <link rel="stylesheet" href="/assets/stylesheets/single/desktop.min.01937d3861f963d2e7666759cada17670f20ce2417f6efc2e4da8cad66f45aa5.css" media="(min-width: 769px)"                        integrity="sha256-AZN9OGH5Y9LnZmdZytoXZw8gziQX9u/C5NqMrWb0WqU=" crossorigin="anonymous">
+  
+
+</head>
+<body id="top">
+  
+  <div class="container width-container article-font--for--width-calc"
+       style="z-index:  0;
+              position: relative;"
+  >
+    
+  <header class="top-header">
+    <div
+  class="burger
+         fix top-left"
+  style="z-index: 10;
+         padding: 10px;
+         padding-top: var(--menu-margin-top);">
+  <button
+    style="width: 48px;
+           height: 48px;"
+    aria-label="Open main navigation menu" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true"></button>
+</div>
+
+  <nav role="navigation"
+    
+      class="navigation primary-nav" id="main-menu" aria-label="Primary Navigation"
+      style="z-index:    10;
+             position:   fixed"
+    
+  >
+    <ul
+      class="width-container article-font--for--width-calc"
+      style="position: relative;
+           --items: 2">
+  <li>
+    <div class="zippy" data-subnav='categories'>
+      <div
+        class="zippy-head">
+        <a  aria-current="true" class="ancestor" href="/" title="Articles and Tutorials | Home Page">
+          <span class="o1">Blog</span>
+        </a>
+      </div>
+      <div
+        class="zippy-overflow"
+        style="z-index: -1;
+               position: absolute !important;
+               left:     0        !important;
+               right:    0        !important;"
+      >
+        <div class="zippy-content" aria-hidden="true">
+          <ul class="end-options">
+  <li>
+    <a aria-current="true" class="ancestor" href="/categories/tech/" title="Technology"style="text-decoration: underline 0.15em hsl(270, 85%, 75%) !important"
+    >
+      <div class="width-content article-font--for--width-calc">
+        <div class="o2">Technology</div>
+      </div>
+    </a>
+  </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </li>
+    </ul>
+  </nav>
+
+  </header>
+
+    
+  <main>
+    <article>
+
+      
+
+
+
+
+<header class="aheader
+               rel z0  one center
+               bg-w"
+        style="height:          550px;
+               padding-top:     20px;
+               padding-bottom:  20px;">
+  <div class="rel center">
+    <a href="/css-scope/" title="Reload this article">
+      <h1
+        onpointerover="this.style.color = 'hsl(270, 100%, 42%)'"
+        onpointerleave="this.style.color = 'hsl(0, 0%, 0%)'"
+        class="txt-center b"
+
+      >CSS @scope: A New Dimension to the Cascade</h1>
+    </a>
+
+    
+      <div class="meta meta-terms
+                  rel-to  center gap03em"
+           style="top: calc(100% + 10px)">
+        
+
+  
+  
+  
+        
+
+  
+  
+  
+    <div class="terms">
+      <ul class="taxonomy-terms tags meta"
+        style="color: hsl(270, 85%, 75%) !important">
+          <li>
+            <a href="/tags/css/"
+              >#Css</a>
+          </li>
+          <li>
+            <a href="/tags/css-scope/"
+              >#CssScope</a>
+          </li>
+          <li>
+            <a href="/tags/css-cascade/"
+              >#CssCascade</a>
+          </li>
+        
+      </ul>
+    </div>
+      </div>
+    
+  </div>
+
+  
+    
+    
+    <time
+      class="meta meta-date
+             rel -x-end -y-end"
+      style="bottom:-15px;color: hsl(270, 85%, 75%) !important"
+      datetime="2025-12-25T00:00:00&#43;00:00"
+    >25 Dec 2025</time>
+  
+    <div class="category-id
+                rel-to  center"
+    >
+
+<a
+  href='/categories/tech/'
+  title='Main category: Technology'
+  style="
+          color:            hsl(270, 85%, 75%) !important;
+          background-color: hsl(270, 100%, 95%) !important;
+          border-color:     hsl(270, 100%, 88%) !important;"
+ >T</a>
+</div>
+  <div
+    class="bg-elem hero
+           rel-to  z-1
+           top-left stretch"
+    style="background-color: hsl(270, 100%, 95%) !important;"
+  >
+</header>
+
+
+      <div class="content">
+        <p>When you first hear about css <code>@scope</code>, you think: so what does it actually scope? And the answer is that it scopes where the css applies.</p>
+<div id="continuing" ></div>
+<p>You also ask yourself, why do we need that? What is the difference between <code>@scope (.parent) { .child { … } }</code> and <code>.parent .child { … }</code> or <code>.parent { &amp; .child { … } }</code>? And the answer is: not much difference there, except a few nuances:</p>
+<ul>
+<li>you can add a lower boundary, like so: <code>@scope (&lt;scope start selector&gt;) to (&lt;scope end selector&gt;) { … }</code> (the end element and its subtree are excluded)</li>
+<li>specificity of scoped selectors ends up to be as writen</li>
+</ul>
+<p>What <code>@scope</code> doesn&rsquo;t do:</p>
+<ul>
+<li>it does affect cascade due to proximity based conflict resolution, but it doesn&rsquo;t encapsulate styles the way Shadow DOM does</li>
+<li>it doesn&rsquo;t affect property inheritance (inherited values can pass into and out of the scoped subtree)</li>
+</ul>
+<p><code>@scope</code> adds a very useful element to the cascade, which is <em>proximity based conflict resolution</em>—another layer of cascade resolution.</p>
+<p>Current cascade order: <strong>cascade layer → specificity → scoping proximity → order of appearance (source order)</strong>.</p>
+<p>Initially we had only <strong>specificity → source order</strong>, then cascade layers were introduced as a way to define cascade at higher level of abstraction.</p>
+<p><em>Scoping proximity</em> in the cascade: when competing declarations come from different scopes, the one whose scope root is closer to the element wins, even if source order would otherwise decide.</p>
+<p>There is also &ldquo;inline&rdquo; <code>@scope</code>, which I find really cool—until now there was a little reason to enclose <code>&lt;style&gt;</code> into a particular element; now you can do this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">parent</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>    @<span style="color:#66d9ef">scope</span> { <span style="color:#75715e">/* root is the &lt;style&gt;&#39;s enclosing parent */</span> }
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">parent</span>&gt;
+</span></span></code></pre></div>
+      </div>
+      
+    </article>
+  </main>
+
+    <footer class="primary-footer">
+  <div class="side-nav" style="width: 0; height: 0; opacity: 0">
+    <a href="#top" aria-label="Top"></a>
+  </div>
+  <p class="copyright">&copy;&nbsp;2025.&nbsp;All rights reserved.</p>
+  
+</footer>
+    <div class="bg-elem"></div>
+  </div>
+  
+
+      <script src="/assets/js/main.4fb6588afa1fd188cbc3970d5407f170e9f70811e1256ca40c22372818c714e9.js" integrity="sha256-T7ZYivof0YjLw5cNVAfxcOn3CBHhJWykDCI3KBjHFOk=" crossorigin="anonymous"></script>
+
+</body>
+</html>

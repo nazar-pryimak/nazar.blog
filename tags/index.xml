@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Nazar Pryimak</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 08 Dec 2025 07:49:40 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Css</title>
+      <link>/tags/css/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css Cascade</title>
+      <link>/tags/css-cascade/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/css-cascade/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css Scope</title>
+      <link>/tags/css-scope/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/css-scope/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Git</title>
       <link>/tags/git/</link>
